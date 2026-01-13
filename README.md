@@ -1,10 +1,10 @@
-# Dataset Distribution Identification
+## Auditing Data Provenance in LLM Fine-tuning via Intrinsic Distributional Fingerprints
 
 This is the official code repository for paper **Auditing Data Provenance in LLM Fine-tuning via Intrinsic Distributional Fingerprints**. 
 
 In this paper, we propose Distribution Provenance Audit (DPA), a novel framework that enhances data management through unauthorized data usage detection and data privacy leakage assessment. Given the high value of proprietary LLM fine-tuning data and potential infringement risks, DPA plays a critical role in data curation and security for the LLM era, focusing on data provenance and infringement detection while complementing prior works with greater effectiveness and robustness. In particular, Section 6 details DPA's applications to fine-tuning data provenance and the tension between AI transparency and privacy leakage, and Section 7 evaluates DPA's effectiveness, robustness, and reliability for LLM data management.
 
-The paper is now under review of CCS'26 Round-1. More organized codes will be released after the paper is accepted.
+The paper is now under review of CCS'26 Round-1 Submission No.971. More organized codes will be released after the paper is accepted.
 
 ![DPA schema](./images/DPA-schema.png)
 
