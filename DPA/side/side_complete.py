@@ -962,12 +962,18 @@ def generate_output(base_model:str=base_model,
                     surrogate_surrogate_gpu_utility: float=0.3,
                     embedding_batch_size:int = 100,
                     max_surrogate_model_len:int = 4096,
+                    beta: float = perturbation_magnitude,
+                    epsilon: float = perturbation_magnitude_delta,
                     ):
     
     set_random_seed(seed)
     
     print(base_model, peft_weights, save_path, use_alpaca_module_template, surrogate_model_path)
     print(num_total_outputs, num_sample_texts, num_start_up_texts)
+    print(beta, epsilon)
+
+    perturbation_magnitude = beta
+    epsilon = perturbation_magnitude_delta
 
     ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
     # Step 1 get models 
